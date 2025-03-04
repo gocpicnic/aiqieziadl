@@ -2,5 +2,3 @@ services:
   aiqiezia:
     build:.
     image:gocpicnic/aiqiezia:250304-bookworm
-
-
