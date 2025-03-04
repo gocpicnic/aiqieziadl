@@ -1,3 +1,4 @@
+# This file is used to define the services that will be deployed in the release
 services:
   aiqiezia:
     image: gocpicnic/aiqiezia:250304-bookworm
