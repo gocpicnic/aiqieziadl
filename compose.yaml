@@ -1,0 +1,18 @@
+services:
+  aiqiezia:
+    build:
+      context: .
+      dockerfile: docker/development/bookworm/Dockerfile
+    working_dir: "/go/src/github.com/gocpicnic/aiqeizia"
+    volumes:
+      - ".:/go/src/github.com/gocpicnic/aiqeizia"
+      - "go-mod:/go/pkg/mod"
+
+volumes:
+  go-mod:
+    driver: local  
+
+networks:
+  default:
+    name: aiqeizia
+    driver: bridge
